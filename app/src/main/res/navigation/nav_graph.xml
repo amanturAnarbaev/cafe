@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph.xml"
+    app:startDestination="@id/tablesFragment">
+
+    <fragment
+        android:id="@+id/tablesFragment"
+        android:name="com.example.cafe.tables.TablesFragment"
+        android:label="fragment_tables"
+        tools:layout="@layout/fragment_tables">
+        <action
+            android:id="@+id/action_tablesFragment_to_menuFragment"
+            app:destination="@id/menuFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/menuFragment"
+        android:name="com.example.cafe.Menu.MenuFragment"
+        android:label="fragment_menu"
+        tools:layout="@layout/fragment_menu">
+
+        <argument
+            android:name="table"
+            app:argType="integer" />
+        <action
+            android:id="@+id/action_menuFragment_to_chequeFragment"
+            app:destination="@id/chequeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/chequeFragment"
+        android:name="com.example.cafe.ChequeFragment"
+        android:label="ChequeFragment"
+        tools:layout="@layout/fragment_cheque">
+        <argument
+            android:name="adress"
+            app:argType="string" />
+
+        <argument
+            android:name="checkNumber"
+            app:argType="string" />
+        <argument
+            android:name="time"
+            app:argType="string" />
+
+
+        <argument
+            android:name="give"
+            app:argType="string" />
+
+        <argument
+            android:name="table"
+            app:argType="string" />
+
+    </fragment>
+
+
+</navigation>

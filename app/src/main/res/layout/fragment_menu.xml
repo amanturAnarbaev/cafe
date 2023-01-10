@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".Menu.MenuFragment">
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/cardRecycler"
+        android:layout_width="match_parent"
+        android:layout_height="190dp"
+        android:orientation="vertical"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/menuRecycler"
+        tools:listitem="@layout/item_card" />
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/finishBtn"
+        android:layout_width="160dp"
+        android:layout_height="80dp"
+        android:layout_marginRight="8dp"
+        android:backgroundTint="@color/orange"
+        android:text="complate order"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:cornerRadius="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/cancelBtn"
+        android:layout_width="160dp"
+        android:layout_height="80dp"
+        android:layout_marginRight="16dp"
+        android:backgroundTint="@color/grey"
+        android:text="cancel order"
+        android:textColor="@color/white"
+        android:textSize="22sp"
+        app:cornerRadius="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/finishBtn" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/menuRecycler"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="270dp"
+        android:orientation="vertical"
+        app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:listitem="@layout/item_menu" />
+
+    <TextView
+        android:id="@+id/order"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="26dp"
+        android:text="Order quantity"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cardRecycler" />
+
+    <TextView
+        android:id="@+id/amount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="6dp"
+        android:text="Order amount"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/order" />
+
+    <TextView
+        android:id="@+id/orderQuantity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/_89574385"
+        android:textColor="@color/black"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@id/cancelBtn"
+        app:layout_constraintStart_toEndOf="@id/order"
+        app:layout_constraintTop_toBottomOf="@id/cardRecycler" />
+
+    <TextView
+        android:id="@+id/orderAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="@string/_89574385"
+        android:textColor="@color/black"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/cancelBtn"
+        app:layout_constraintStart_toEndOf="@id/amount" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

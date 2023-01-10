@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="500dp"
+        android:layout_height="match_parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text="Samsa Land"
+                android:textColor="@color/black"
+                android:textSize="60sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/adress"
+                style="@style/TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="adress jifr"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/title" />
+
+
+            <TextView
+                android:id="@+id/checkNumber"
+                style="@style/TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="adress jifr"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/adress" />
+
+            <TextView
+                android:id="@+id/time"
+                style="@style/TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="adress jifr"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/checkNumber" />
+
+
+            <TextView
+                android:id="@+id/nedd"
+                style="@style/TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="adress jifr"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/time" />
+
+            <TextView
+                android:id="@+id/table"
+                style="@style/TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="adress jifr"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/nedd" />
+
+            <TextView
+                style="@style/TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="99dp"
+                android:text="Thank you for choosing us"
+                android:textAlignment="center"
+                android:textSize="80sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/table" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
